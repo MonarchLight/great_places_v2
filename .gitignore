@@ -9,6 +9,8 @@
 .history
 .svn/
 location_helper.dart
+android/app/src/main/api-keys.xml
+
 
 # IntelliJ related
 *.iml
