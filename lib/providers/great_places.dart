@@ -12,6 +12,10 @@ class GreatPlaces with ChangeNotifier {
     return [..._items];
   }
 
+  Place findById(String id) {
+    return _items.firstWhere((place) => place.id == id);
+  }
+
   Future<void> addPlace(
     String pickedtitle,
     File pickedimage,
@@ -35,9 +39,9 @@ class GreatPlaces with ChangeNotifier {
       "id": newPlace.id,
       "title": newPlace.title,
       "image": newPlace.image.path,
-      "loc_lat": newPlace.location!.latitude,
-      "loc_lng": newPlace.location!.longitude,
-      "address": newPlace.location!.address as String,
+      "loc_lat": newPlace.location.latitude,
+      "loc_lng": newPlace.location.longitude,
+      "address": newPlace.location.address,
     });
   }
 

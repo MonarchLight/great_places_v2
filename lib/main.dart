@@ -1,3 +1,4 @@
+import '/screens/places_detail_screen.dart';
 import '/screens/add_places_screen.dart';
 import '/screens/places_list_screen.dart';
 
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         home: const PlacesListScreen(),
         routes: {
           AddPlacesScreen.routeName: (ctx) => AddPlacesScreen(),
+          PlaceDetailScreen.routeName: (ctx) => PlaceDetailScreen(),
         },
       ),
     );
